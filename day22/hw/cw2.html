@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="number"] {
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Required attributes examples -->
+    <img src="image.jpg" alt="Description of image"> <!-- src and alt are required for img -->
+    <a href="https://example.com">Link</a> <!-- href is required for anchor -->
+    <input type="text" name="username"> <!-- type and name are required for form inputs -->
+    
+    <!-- Optional attributes examples -->
+    <div class="container" id="main" style="color: blue;">Div with optional attributes</div>
+    <p class="text" id="paragraph" title="This is a paragraph">Paragraph with optional attributes</p>
+    
+    <!-- Form elements with various attributes -->
+    <form action="/submit" method="post" target="_blank">
+        <input type="text" name="username" placeholder="Enter username" required>
+        <input type="email" name="email" placeholder="Enter email" autocomplete="on">
+        <input type="password" name="password" minlength="8" maxlength="20">
+        <input type="number" name="age" min="18" max="100">
+        <input type="date" name="birthdate">
+        <input type="checkbox" name="subscribe" checked>
+        <input type="radio" name="gender" value="male">
+        <input type="radio" name="gender" value="female">
+        <select name="country">
+            <option value="ge">Georgia</option>
+            <option value="us">USA</option>
+        </select>
+        <textarea name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <button type="submit" disabled>Submit</button>
+    </form>
+    
+    <!-- Media elements with attributes -->
+    <video width="320" height="240" controls autoplay muted>
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+    
+    <audio controls loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Table with various attributes -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- List elements -->
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    
+    <ol type="A" start="3">
+        <li>First item</li>
+        <li>Second item</li>
+    </ol>
+
+    <h1>Age Category Checker</h1>
+    <div class="form-group">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" min="0" max="120" required>
+    </div>
+    <button onclick="checkAge()">Check Category</button>
+    <div id="result"></div>
+
+    <script>
+        function checkAge() {
+            const age = parseInt(document.getElementById('age').value);
+            const resultElement = document.getElementById('result');
+            
+            if (isNaN(age)) {
+                resultElement.textContent = "Please enter a valid age";
+                return;
+            }
+
+            if (age <= 10) {
+                resultElement.textContent = "Kid";
+            } else if (age > 10 && age < 18) {
+                resultElement.textContent = "Teenager";
+            } else if (age >= 18 && age < 30) {
+                resultElement.textContent = "Adult";
+            } else {
+                resultElement.textContent = "Unc";
+            }
+        }
+    </script>
+</body>
+</html>

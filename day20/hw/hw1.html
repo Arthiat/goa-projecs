@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>სურათების ნავიგაცია</title>
+</head>
+<body>
+    <!-- nav - ნავიგაციის ზოლი, საიდანაც შესაძლებელია გადასვლა კონკრეტულ სურათზე -->
+    <nav>
+        <!-- 
+            <a> - ბმული (ლინკი)
+            href="#car" - მიუთითებს, რომ ბმულზე დაჭერისას გადავა იმ ელემენტთან, რომელსაც აქვს id="car"
+            href-ში შეგვიძლია ჩავწეროთ:
+                - სხვა გვერდის მისამართი (მაგ: "about.html")
+                - ან ამავე გვერდზე კონკრეტული ელემენტის id (მაგ: "#car")
+        -->
+        <a href="#car">Car</a>
+        <a href="#nature">Nature</a>
+        <a href="#animal">Animal</a>
+    </nav>
+
+    <!-- 
+        <section> - გვერდის სექცია, რომელიც შეიცავს სათაურს და სურათს
+        id="car" - უნიკალური იდენტიფიკატორი, რომ ბმულიდან მოხდეს ამ სექციაზე გადასვლა
+        id-ში უნდა ჩავწეროთ უნიკალური სახელი, რომელიც არ მეორდება გვერდზე
+    -->
+    <section id="car">
+        <h2>Car</h2>
+        <!-- 
+            <img> - სურათის ტეგი
+            src="" - სურათის მისამართი (URL ან ფაილის ლოკალური ბილიკი)
+                მაგ: src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+            alt="" - ალტერნატიული ტექსტი, რომელიც გამოჩნდება თუ სურათი არ ჩაიტვირთა ან ეკრანის წამკითხველისთვის
+                მაგ: alt="Car"
+            height="" - სურათის სიმაღლე პიქსელებში
+                მაგ: height="600" ნიშნავს, რომ სურათის სიმაღლე იქნება 600px
+        -->
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Car" height="600">
+    </section>
+
+    <section id="nature">
+        <h2>Nature</h2>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature" height="600">
+    </section>
+
+    <section id="animal">
+        <h2>Animal</h2>
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Animal" height="600">
+    </section>
+</body>
+</html>
