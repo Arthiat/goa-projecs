@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>დივების სხვადასხვა სტილიზაცია</title>
+  <style>
+    /* 1. კლასი */
+    .class-style {
+      width: 150px;
+      height: 150px;
+      background-color: lightcoral;
+      margin: 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    /* 2. იდენტიფიკატორი */
+    #id-style {
+      width: 150px;
+      height: 150px;
+      background-color: lightseagreen;
+      margin: 10px;
+      border: 3px dashed darkgreen;
+      display: inline-block;
+    }
+
+    /* 3. ელემენტის სელექტორი (შენიშვნა: სტილი შეეხება ყველა div-ს, რომლებსაც არ აქვთ კლასი ან იდენტიფიკატორი) */
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      margin: 10px;
+      border: 2px solid navy;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="class-style">კლასით</div>
+  <div id="id-style">იდენტიფიკატორით</div>
+  <div>ელემენტით</div>
+
+</body>
+</html>

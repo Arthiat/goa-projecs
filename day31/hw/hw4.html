@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ჩემი ვებგვერდი</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 0 0 12px 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: blue;
+    }
+
+    nav a:active {
+      color: red;
+    }
+
+    .container {
+      background-color: #e0f7fa;
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 16px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .list-section {
+      display: flex;
+      gap: 50px;
+      margin-top: 20px;
+    }
+
+    ul.inside {
+      list-style-position: inside;
+    }
+
+    ul.outside {
+      list-style-position: outside;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">მთავარი</a>
+    <a href="#">ჩვენს შესახებ</a>
+    <a href="#">სერვისები</a>
+    <a href="#">კონტაქტი</a>
+  </nav>
+
+  <div class="container">
+    <h1>მოგესალმები ჩემს ვებსაიტზე</h1>
+    <p>ეს მარტივი გვერდია, სადაც გამოსაყენებელია სხვადასხვა CSS ტექნიკა, რომელიც უკვე ვისწავლეთ.</p>
+
+    <div class="list-section">
+      <ul class="inside">
+        <li>პირველი ელემენტი</li>
+        <li>მეორე ელემენტი</li>
+        <li>მესამე ელემენტი</li>
+      </ul>
+
+      <ul class="outside">
+        <li>პირველი ელემენტი</li>
+        <li>მეორე ელემენტი</li>
+        <li>მესამე ელემენტი</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

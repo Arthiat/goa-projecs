@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ნავიგაცია და ლისტის სტილები</title>
+  <style>
+    nav {
+      background-color: #222;
+      padding: 10px 20px;
+      border-radius: 8px;
+      width: fit-content;
+      margin: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      padding: 8px 12px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Home-ი გამორჩეულად: */
+    nav ul li.home {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff9800; /* სტაფილოსფერი */
+      background-color: #333;
+      border-radius: 6px;
+    }
+
+    /* სხვა ელემენტები:hover */
+    nav ul li:not(.home):hover {
+      background-color: #555;
+      color: #ffcc80;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="home">Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+</body>
+</html>
